@@ -1,6 +1,6 @@
 # Reddit Notifier
 
-Python bot to send notifications via email threads via email.
+Python bot to send notifications via email when keywords are found on Reddit.
 
 ### Install dependencies
 
