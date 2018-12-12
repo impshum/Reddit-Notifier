@@ -4,7 +4,7 @@ Python bot to send notifications via email threads via email.
 
 ### Install dependencies
 
-    pip3 install praw, smtplib
+    pip3 install praw smtplib
 
 ### Fill in the blanks     
 
