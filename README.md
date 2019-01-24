@@ -13,3 +13,8 @@ Python bot to send notifications via email when keywords are found on Reddit.
 ### Run it
 
     python3 run.py
+
+
+#### Bonus
+
+dm.py does the same thing but sends a Reddit PM instead of an email.
