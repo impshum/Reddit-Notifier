@@ -24,7 +24,7 @@ start_time = time.time()
 for submission in reddit.subreddit(target_subreddit).stream.submissions():
     title = submission.title
     for key in target_keywords:
-        if start_time > submission.created_utc and key in title:
+        if start_time < submission.created_utc and key in title:
             print('Found one!')
             author = submission.author
             sub = submission.subreddit
