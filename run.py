@@ -25,6 +25,7 @@ def main():
         title = submission.title
         for key in target_keywords:
             if key in title:
+                msg_title = title if len(title) <= 100 else title[:97] + "..."
                 author = submission.author
                 sub = submission.subreddit
                 body = submission.selftext
@@ -32,7 +33,7 @@ def main():
                 date = time.strftime(
                     "%B %d %Y %H:%M", time.gmtime(submission.created_utc))
                 msg = f'{date}\n\nu/{author} → r/{sub}\n\n{body}\n\n[link](https://reddit.com/{link})'
-                reddit.redditor(target_user).message(title, msg)
+                reddit.redditor(target_user).message(msg_title, msg)
                 print(title)
 
 
