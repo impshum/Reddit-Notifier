@@ -1,20 +1,20 @@
 # Reddit Notifier
 
-Python bot to send notifications via email when keywords are found on Reddit.
+Python bot to send a PM when keywords are found on Reddit.
 
-### Install dependencies
+### Instructions
 
-    pip3 install praw smtplib
+-   Install requirements `pip install -r requirements.txt`
+-   Create Reddit (script) app at https://www.reddit.com/prefs/apps/ and get keys
+-   Edit conf.ini with your details
+-   Run it `python run.py`
 
-### Fill in the blanks     
+#### Settings Info
 
-- Enter all your juicy details into the top of run.py
+-   `target_subreddits` - Subreddit to stream. Multiple allowed (comma separated).
+-   `target_keywords` - Keywords to trigger PM. Multiple allowed (comma separated).
+-   `target_user` - Redditor to receive PM.
 
-### Run it
+#### Tip
 
-    python3 run.py
-
-
-#### Bonus
-
-dm.py does the same thing but sends a Reddit PM instead of an email.
+BTC - 1AYSiE7mhR9XshtS4mU2rRoAGxN8wSo4tK
